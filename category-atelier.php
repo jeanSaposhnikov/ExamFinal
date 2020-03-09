@@ -15,7 +15,7 @@ get_header();
 			$article=1;
 			while ( have_posts() ) :
 				 the_post();
-				 echo '<p>'. $article . " ".get_the_title(). '</p>';
+				 echo '<p>'. $article . ". ".get_the_title(). "____".get_post_field('post_name')."______".	get_the_author_meta( 'display_name', $post->post_author )  . '</p>';
 				 $article++;
 			endwhile;
 		?>

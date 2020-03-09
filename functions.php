@@ -16,7 +16,7 @@ function extraire_ateliers($query) {
         {
             $query->set( 'category_name', 'atelier' );
             $query->set( 'posts_per_page', 10 );
-            $query->set( 'orderby', 'date');
+            $query->set( 'orderby', 'post_name');
             $query->set( 'order', 'ASC');
         }
 }
