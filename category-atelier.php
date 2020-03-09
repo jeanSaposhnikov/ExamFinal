@@ -10,8 +10,9 @@
 get_header();
 ?>
         
-			<section id="ateliers">
+			<section id="ateliers">	
 			<?php
+			echo "<h2>". category_description( get_category_by_slug('atelier')) . "</h2>"; 
 			$article=1;
 			while ( have_posts() ) :
 				 the_post();
